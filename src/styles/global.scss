@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+
+  #root {
+    height: inherit;
+
+    main {
+      height: inherit;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      grid-template-rows: 48px 1fr 52px;
+      grid-auto-columns: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "Header ChannelHeader"
+        "Sidebar Chat"
+        "User Chat";
+
+      .Header {
+        grid-area: Header;
+      }
+
+      .ChannelHeader {
+        grid-area: ChannelHeader;
+      }
+
+      .Sidebar {
+        grid-area: Sidebar;
+      }
+
+      .User {
+        grid-area: User;
+      }
+
+      .Chat {
+        grid-area: Chat;
+      }
+    }
+  }
+}

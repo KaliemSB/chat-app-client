@@ -1,17 +1,24 @@
 /** @type {import('tailwindcss').Config} */
+const pallete = require("./src/styles/pallete.json");
+
+const catppuccin = {};
+
+for (const item in pallete.mocha) {
+  catppuccin[item] = pallete.mocha[item].rgb;
+}
+
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/*.{jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        ...catppuccin
+      },
+    },
   },
-  plugins: [
-    require("@catppuccin/tailwindcss")({
-      prefix: "ctp",
-      defaultFlavour: "mocha",
-    }),
-  ],
+  plugins: [],
 };

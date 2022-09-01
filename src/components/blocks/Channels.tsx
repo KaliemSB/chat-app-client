@@ -36,11 +36,11 @@ const Channels: React.FC = () => {
     <div className="flex flex-col gap-4">
       <ChannelSearch onChange={setSearch} value={search} />
       {search.length > 0
-        ? filteredChannels.map((v) => (
-            <ChannelItem label={v.label} preview={v.preview} />
+        ? filteredChannels.map((v, i) => (
+            <ChannelItem key={i} label={v.label} preview={v.preview} />
           ))
-        : channels.map((v) => (
-            <ChannelItem label={v.label} preview={v.preview} />
+        : channels.map((v, i) => (
+            <ChannelItem key={i} label={v.label} preview={v.preview} />
           ))}
     </div>
   );

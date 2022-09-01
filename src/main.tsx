@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Modal } from "./components/atoms/Modal";
 import { ChannelHeader } from "./components/blocks/ChannelHeader";
 import { Channels } from "./components/blocks/Channels";
 import { Header } from "./components/blocks/Header";
@@ -23,5 +24,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       </div>
       <div className="Chat bg-mantle"></div>
     </main>
+    <Modal />
   </React.StrictMode>
 );

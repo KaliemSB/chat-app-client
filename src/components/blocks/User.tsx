@@ -9,7 +9,7 @@ const User: React.FC = () => {
           src="https://github.com/kaliemSB.png"
           alt="User"
         />
-        <p className="text-text text-sm">Kaliem Ajudas</p>
+        <p className="text-text text-sm text-bold">Kaliem Ajudas</p>
       </div>
       <span className="material-symbols-rounded text-text select-none cursor-pointer">expand_more</span>
     </div>

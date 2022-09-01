@@ -3,6 +3,7 @@ const User: React.FC = () => {
     <div className="flex items-center justify-between w-full">
       <div className="flex gap-2 items-center">
         <img
+          draggable="false"
           width={32}
           height={32}
           className="rounded-lg"

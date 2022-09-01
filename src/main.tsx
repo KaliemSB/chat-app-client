@@ -8,7 +8,7 @@ import "./styles/global.scss"
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <main>
-      <div className="Header bg-base shadow-md z-10 flex items-center pl-4">
+      <div className="Header bg-base shadow-md z-10 flex items-center px-4">
         <Header />
       </div>
       <div className="ChannelHeader bg-mantle shadow-md z-10"></div>

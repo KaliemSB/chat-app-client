@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { ChannelHeader } from "./components/blocks/ChannelHeader";
 import { Channels } from "./components/blocks/Channels";
 import { Header } from "./components/blocks/Header";
 import { User } from "./components/blocks/User";
@@ -11,7 +12,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <div className="Header bg-base shadow-md z-10 flex items-center px-4">
         <Header />
       </div>
-      <div className="ChannelHeader bg-mantle shadow-md z-10"></div>
+      <div className="ChannelHeader bg-mantle shadow-md z-10 flex items-center px-4">
+        <ChannelHeader />
+      </div>
       <div className="Sidebar bg-base p-4 overflow-y-auto">
         <Channels />
       </div>

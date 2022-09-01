@@ -25,7 +25,7 @@ const Channels: React.FC = () => {
     {
       label: "Welcome",
       preview: "W",
-    },
+    }
   ];
 
   const filteredChannels = channels.filter((v) =>
